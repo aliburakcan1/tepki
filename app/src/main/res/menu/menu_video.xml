@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tepki.tepki3.drawer.MainActivity">
+
+
+    <item
+        android:id="@+id/geriButonu"
+        android:icon="@drawable/geributonu"
+        android:orderInCategory="101"
+        android:title="geri"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/button_paylas"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="102"
+        android:title="Paylaşma"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/buttonFavori"
+        android:orderInCategory="103"
+        android:icon="@drawable/likepng"
+        android:title="Favla"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Tepki</string>
+    <string name="title_activity_main">Slide Menü</string>
+    <string name="opened">Menü Açık</string>
+    <string name="closed">Menü Kapalı</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="insta">Instagram Page</string>
+    <string name="tumb">Tumblr Page</string>
+    <string name="ulusoy">ulusoy</string>
+    <string name="Tepki">Tepki</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-***/****</string>
+    <string name="ADMOB_APP_ID">ca-app-pub-*****~*****</string>
+    <string name="inter_ad_unit_id">ca-app-pub-*****/******</string>
+    <string name="inter2_ad_unit_id">ca-app-pub-*****/*****</string>
+
+
+    <string-array name="slidemenu_item">
+
+        <item>Recep Tayyip Erdoğan</item>
+        <item>Kemal Kılıçdaroğlu</item>
+        <item>Devlet Bahçeli</item>
+        <item>İbrahim Tatlıses</item>
+        <item>Yıldız Tilbe</item>
+        <item>Mahmut Tuncer</item>
+        <item>Bülent Ersoy</item>
+        <item>Seda Sayan</item>
+        <item>Polat Alemdar</item>
+        <item>Cübbeli Ahmet Hoca</item>
+        <item>Fatih Terim</item>
+        <item>Aziz Yıldırım</item>
+        <item>Erman Toroğlu</item>
+        <item>Ahmet Çakar</item>
+        <item>Şener Şen</item>
+        <item>Cüneyt Arkın</item>
+        <item>Burhan Altıntop</item>
+        <item>Ortaya Karışık</item>
+
+    </string-array>
+
+    <array name="icons">
+        <item name="tayyip">@drawable/wdfij6</item>
+        <item name="kemal">@drawable/f806389c3abf265aed7f590bb1720627</item>
+        <item name="devlet">@drawable/devlet_bahceli</item>
+        <item name="ibrahim">@drawable/a19543</item>
+        <item name="yildiz">@drawable/a3beceaf082697284e87e19b94408acf5</item>
+        <item name="mahmut">@drawable/a4b5d330a997432b79065ec65aef78dfe</item>
+        <item name="bulent">@drawable/ersoy</item>
+        <item name="seda">@drawable/sedasayansli</item>
+        <item name="polat">@drawable/a38891ee53dd529eda4150a0284aedfbc</item>
+        <item name="cubbeli">@drawable/a1ab659c284c19ccb91a9b7aa5f0ea615</item>
+        <item name="fatih">@drawable/fatih_terim</item>
+        <item name="aziz">@drawable/a8fd0de88cc36e577350de50a72a6be6a</item>
+        <item name="erman">@drawable/a632x314_erman_toroglu_ates_puskurdu_1501828141252</item>
+        <item name="ahmet">@drawable/tdtxn4m</item>
+        <item name="sener">@drawable/a334b0b404c74bfeb615a469707d22e39</item>
+        <item name="cuneyt">@drawable/cuneyt_arkin_karizmasi_1037534_600x497</item>
+        <item name="burhan">@drawable/burhan_altintop_erol_gunaydin_</item>
+        <item name="karisik">@drawable/keh_1506675054_4274</item>
+
+    </array>
+
+</resources>

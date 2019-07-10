@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tepki.tepki3.drawer.MainActivity">
+
+
+    <item
+        android:id="@+id/favorin"
+        android:orderInCategory="101"
+        android:title="BURASI FAVORİLERİN"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/buttonMainPage"
+        android:title="main"
+        android:orderInCategory="101"
+        android:icon="@drawable/home_512"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/button_search"
+        android:icon="@drawable/buyutecpng"
+        android:orderInCategory="102"
+        android:title="Search"
+        app:showAsAction="always" />
+
+</menu>

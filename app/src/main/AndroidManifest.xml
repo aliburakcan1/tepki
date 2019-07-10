@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tepki.tepki3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.tepki.tepki3.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Tepki"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ADMOB_APP_ID"/>
+        <activity
+            android:name="com.tepki.tepki3.MainActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.tepki.tepki3.SearchActivity" />
+        <activity android:name="com.tepki.tepki3.VideoViewActivity" />
+        <activity
+            android:name="com.tepki.tepki3.FavoryActivity"
+            android:label="" />
+        <activity android:name="com.tepki.tepki3.WebViewActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.tepki.tepki3.tepki3.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.tepki.tepki3.DenemeActivity">
+
+        </activity>
+    </application>
+
+</manifest>

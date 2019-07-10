@@ -1,0 +1,69 @@
+package com.tepki.tepki3;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+
+import java.util.List;
+
+/**
+ * Created by gkhnnl on 11/06/15.
+ */
+public class SlideMenuAdapter extends BaseAdapter {
+
+    private List<SlideMenuItem> items;
+    private Context ctx;
+
+    public SlideMenuAdapter(List<SlideMenuItem> items, Context context) {
+        this.items = items;
+        this.ctx = context;
+    }
+
+    // Mevcut item sayısını verir
+    @Override
+    public int getCount() {
+        return items.size();
+    }
+
+    // Position ı verilen item ı verir
+    @Override
+    public Object getItem(int position) {
+        return items.get(position);
+    }
+
+    // Item position ı verir
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    // Custom view yükler
+    @Override
+    public View getView(int position, View convertView, ViewGroup viewGroup) {
+
+
+
+        // Her list item için custom tasarım yüklüyor
+
+
+        LayoutInflater inflater= (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        if (convertView == null) {
+            convertView = inflater.inflate(R.layout.slidemenu_item, null);
+        }
+
+            // Yeni tasarım içindeki title textine ulaşıp, veriyi set ediyor
+            TextView txt_title = convertView.findViewById(R.id.txt_title);
+            ImageView img_icon = convertView.findViewById(R.id.img_icon);
+
+            txt_title.setText(items.get(position).getTitle());
+            img_icon.setImageResource(items.get(position).getIcon());
+
+        return convertView;
+    }
+
+}
